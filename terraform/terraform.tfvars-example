@@ -1,0 +1,10 @@
+location = "eastus"
+management_group_name = "contoso"
+tags = {
+  environment = "lab"
+}
+time_azfw_cycle_off = "04:00:00"
+time_azfw_cycle_on = "12:00:00"
+time_vm_cycle = "05:00:00"
+time_zone_iana_id = "America/New_York"
+vm_max_deallocated_days = 5

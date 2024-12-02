@@ -1,0 +1,22 @@
+## Visual Studio Code
+##
+.vscode
+
+## Mac OS
+##
+.DS_Store
+
+## Terraform
+##
+providers/
+terraform.tfstate
+terraform.tfvars
+terraform.tfstate.backup
+.terraform.lock.hcl
+remote.conf
+.terraform
+versions-local.tf
+
+## Azure Automation
+##
+*/vscodeAutomation/*
