@@ -63,6 +63,7 @@ You must be Owner, User Access Administrator, or have appropriate permissions to
     * **time_azfw_cycle_off** - The time (in UTC) you would like the Azure Firewalls deallocated. By default this is 12AM EST.
     * **time_azfw_cycle_on** - The time (in UTC) you would like the Azure Firewalls reallocated. By default this is 7AM EST.
     * **time_vm_cycle** - The time (in UTC) you would like the CycleVmsOn runbook to run. The CycleVmsOff will run 30 minutes after this time. This is set to 12AM EST by default.
+    * **time_zone** - This is your time zone specified in the [Windows-compatible format](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11). It is used to convert time throughout many of the functions in the runbooks.
     * **tag** - Any tags you would like added to the resources
 
 2. Tag the Azure Virtual Machines and Azure Firewall instances you would like to be controlled by the runbooks with a tag of cycle set to true.
