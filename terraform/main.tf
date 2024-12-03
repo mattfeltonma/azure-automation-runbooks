@@ -119,6 +119,14 @@ resource "azurerm_automation_variable_string" "umi_client_id" {
   encrypted = true
 }
 
+resource "azurerm_automation_variable_string" "time_zone" {
+  name                = "time_zone"
+  automation_account_name = azurerm_automation_account.auto_account.name
+  resource_group_name = azurerm_resource_group.rg.name
+  value               = var.time_zone
+  encrypted = true
+}
+
 ## Create a schedule for the Azure Automation account
 ##
 resource "azurerm_automation_schedule" "boot_vm_cycle_on" {
