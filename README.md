@@ -27,6 +27,7 @@ The components within the Azure Automation Account deployed within this solution
 This solution deploys three encrypted variables.
 * **boot_cycle_days** - This is maximum number of days a virtual machine should be shutdown for. After this number of days, the virtual machine is powered up for 24 hours.
 * **umi_client_id** - This is the client id of the user-assigned managed identity associated with the Azure Automation Account
+* **time_zone** - This is your time zone specified in the [Windows-compatible format](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11). It is used to convert time throughout many of the functions in the runbooks.
 
 ### Schedules
 This solution deploys a schedule for each runbook.
