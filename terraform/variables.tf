@@ -13,6 +13,12 @@ variable "tags" {
   type        = map(string)
 }
 
+variable "time_zone" {
+    description = "The time zone that is used to adjust a number of functions within the automation."
+    type        = string
+    default = "Eastern Standard Time"
+}
+
 variable "time_zone_iana_id" {
     description = "The IANA time zone to use when recording the time in the lastBoot tag. See this article for details: https://learn.microsoft.com/en-us/rest/api/maps/timezone/get-timezone-enum-windows?view=rest-maps-2024-04-01&tabs=HTTP#response"
     type        = string
