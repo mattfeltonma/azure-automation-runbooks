@@ -1,6 +1,7 @@
 # Cost Saving Azure Automation Runbooks 
 
 ## Updates
+* 12/3/2024 - Breakfix; addressed missing time_zone variable
 * 12/1/2024 - Initial release
 
 ## Overview
