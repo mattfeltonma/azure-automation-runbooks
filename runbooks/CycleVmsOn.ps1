@@ -112,7 +112,7 @@ foreach ($subscription in $subscriptions) {
             ## If the tag doesn't exist, add it and boot the virtual machine if it isn't booted
             else {
                 Write-Output "$($vm.Name) is not yet tagged with lastRebooted"
-                $tag = @{"lastBooted" = "$converted_time $time_zone" }
+                $tag = @{"lastBooted" = "$converted_time" }
                 try {
                     $null = Update-AzTag -Tag $tag -Operation Merge -ResourceId $vm.id
                     if ($vm.PowerState -ne "VM Running") {
